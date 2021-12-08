@@ -1,0 +1,61 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 4406,
+      "driver": "MySQL",
+      "name": "Legacy",
+      "group": "MySQL",
+      "database": "test",
+      "username": "root",
+      "password": "111"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5506,
+      "driver": "MySQL",
+      "name": "Cloud",
+      "group": "MySQL",
+      "database": "test",
+      "username": "root",
+      "password": "111"
+    }
+  ],
+
+  // Specify your CryptoCompare API key
+  // "crypto-ticker.apiKey": "YOUR_API_KEY",
+
+  // Specify the refresh interval in seconds
+  "crypto-ticker.interval": 60,
+
+  // Specify the opening period
+  "crypto-ticker.period": "24HOUR",
+
+  // Customize your high and low colors to suite your status bar
+  "crypto-ticker.higherColor": "lightgreen",
+  "crypto-ticker.lowerColor": "coral",
+
+  // Customize your tickers
+  "crypto-ticker.tickers": [
+    {
+      // Wow such coin, much riches
+      "symbol": "BNB",
+      "currency": "THB",
+      // Create a custom ticker template
+      "template": "{symbol} {price} {percent}"
+    },
+    {
+      // You can even compare cryptocurrencies
+      "symbol": "JFIN",
+      "currency": "THB"
+    }
+  ]
+}
